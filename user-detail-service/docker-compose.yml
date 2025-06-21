@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    ports: 
+      - '4000:4000'
+    volumes: 
+     - ./upload:/upload
+    environment: 
+      - PORT=4000
