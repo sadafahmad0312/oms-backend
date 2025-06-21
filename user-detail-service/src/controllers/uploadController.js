@@ -3,7 +3,7 @@
 const {extractText} = require('../services/fileProcessor.js') // import from service
 const {ageCalculate} = require('../services/ageCalculator.js') //import from service
 
-const handleUpload = async(req, res) =>{
+const handleUpload = async(req, res,) =>{
    try{
    const {firstName, lastName, dob} = req.body  //destructure from request body
    const file = req.file    //extract uploaded fiel info

@@ -23,4 +23,4 @@ const fileFilter = (_, file, callback)=>{
 
 const upload = multer({storage, fileFilter})
 
-module.exports =upload.single('file') //export the middleware that handles the single file
+module.exports = upload.single('file') //export the middleware that handles the single file
