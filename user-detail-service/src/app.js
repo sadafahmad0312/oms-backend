@@ -4,7 +4,9 @@ const uploadRoutes = require('./routes/uploadRoutes')  //Imprt upload routes
 
 const app = express(); //Initialize the express app
 
-app.use(cors());  //Enable Cors globally
+app.use(cors(
+   
+));  //Enable Cors globally
 
 app.use(express.json())  // for parsing json
 

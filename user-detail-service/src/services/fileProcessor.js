@@ -16,7 +16,7 @@ try {
       {
         const buffer = await fs.readFile(filePath)  //Read PDFs
         const data =  await pdfParse(buffer)  //parse pdf text
-        const enrichData = data.text.replace(/\n/g, '').replace(/\s/g, '').trim()
+        const enrichData = data.text.replace(/\n/g, '').trim()
         return enrichData;
       }
     

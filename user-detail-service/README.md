@@ -9,7 +9,7 @@ sample response
 }
 
 Text Extraction is done using pdf-parse for pdfs and tesseract.js for image
-#Project Structure
+# Project Structure
 ```
 user-detail-service/
 ├── src/
@@ -17,33 +17,35 @@ user-detail-service/
 │   ├── services/               # Business logic + co-located tests
 │   │   ├── ageService.js
 │   │   ├── fileParserService.js
-│   │   ├── ageService.test.js      # Unit test for age logic
-│   │   └── fileParserService.test.js  # Unit test for parsing logic
-│   ├── routes/                 # API endpoint definitions
-│   ├── middlewares/           # Input validation, error handling
-│   ├── utils/                 # Reusable helpers (optional)
-│   └── app.js                 # Express app setup
-├── uploads/                   # Temporary file storage (gitignored)
-├── .env                       # Environment variables
-├── .gitignore                 # Ignored files/folders
-├── Dockerfile                 # Docker setup
-├── docker-compose.yml         # Container orchestration
-├── package.json               # Project config and dependencies
-└── README.md                  # Project documentation
+│   │   ├── ageService.test.js            # Unit test for age logic
+│   │   └── fileParserService.test.js    # Unit test for parsing logic
+│   ├── routes/                           # API endpoint definitions
+│   ├── middlewares/                      # Input validation, error handling
+│   ├── utils/                            # Reusable helpers (optional)
+│   └── app.js                            # Express app setup
+├── uploads/                              # Temporary file storage (gitignored)
+├── .env                                  # Environment variables
+├── .gitignore                            # Ignored files/folders
+├── Dockerfile                            # Docker setup
+├── docker-compose.yml                    # Container orchestration
+├── package.json                          # Project config and dependencies
+└── README.md                             # Project documentation
+```
 
-## Requirements
+
+# Requirements
 - Node js>= 20
 - npm
 - docker desktop for windows
 
-##Running the project with docker
+# Running the project with docker
 --docker-compose build   (For building)
 docker-compose up (For running the container)
 
-##service will be available at 
+# service will be available at 
 'http://localhost:4000'
 
-#Tools And Stack
+# Tools And Stack
 1. Express.js
 2. pdf-parse
 3. tesserect.js
@@ -53,17 +55,17 @@ docker-compose up (For running the container)
 7. supertest
 8. Docker
 
-#Testing Guide
+# Testing Guide
 
 RUN npx jest (To run all test at once)
 
 RUN - npx jest filepath (Example: npx jest src/services/ageCalculator.js) ~~~(To run all individual test)
 
-##Storage 
+#Storage 
 Currently this project is using simple file storage system to upload file , to scale this can be integrated with mongo and gridfs system can be used as a storage.
 
-##Author
+# Author
 SADAF AHMAD
-Contact ~~~~ ahmadsadaf0312@gmail.com
+Contact - ahmadsadaf0312@gmail.com
 
 
